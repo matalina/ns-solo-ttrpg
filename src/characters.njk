@@ -1,0 +1,13 @@
+---
+layout: base.njk
+eleventyNavigation:
+  key: characters
+  title: Characters
+  order: 2
+---
+
+<ul>
+{%- for char in collections.characters -%}
+  <li><a href="{{ char.url }}">{{char.data.title}}</a></li>
+{%- endfor -%}
+</ul>

@@ -1,0 +1,40 @@
+{
+  "name": "ns-solo-ttrpg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all -p dev:*",
+    "build": "run-s build:*",
+    "dev:11ty": "eleventy --serve",
+    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --watch --postcss",
+    "build:11ty": "eleventy",
+    "build:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --postcss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matalina/ns-solo-ttrpg.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matalina/ns-solo-ttrpg/issues"
+  },
+  "homepage": "https://github.com/matalina/ns-solo-ttrpg#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "autoprefixer": "^10.4.13",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "markdown-it-anchor": "^8.6.7",
+    "markdown-it-container": "^3.0.0",
+    "markdown-it-github-headings": "^2.0.1",
+    "markdown-it-obsidian-images": "^1.0.1",
+    "markdown-it-task-lists": "^2.1.1",
+    "markdown-it-wikilinks": "^1.2.0"
+  }
+}

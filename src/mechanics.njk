@@ -1,0 +1,13 @@
+---
+layout: base.njk
+eleventyNavigation:
+  key: mechanics
+  title: Mechanics
+  order: 3
+---
+
+<ul>
+{%- for mechanic in collections.mechanics -%}
+  <li><a href="{{ mechanic.url }}">{{mechanic.data.title}}</a></li>
+{%- endfor -%}
+</ul>

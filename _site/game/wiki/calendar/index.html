@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>New Adventures</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ad5533d136.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QC35HW0V36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-QC35HW0V36');
+    </script>
+
+  </head>
+  <body class="font-mono">
+    <div
+      class="hidden xl:block xl:fixed xl:h-screen xl:w-1/3 bg-cover"
+      style="background-image:url(/game/images/bookcover.jpg)">
+      &nbsp;
+    </div>
+    <div class="xl:ml-[33%] p-3 lg:w-4/5 lg:mx-auto xl:w-[67%]">
+      <header class="md:flex md:justify-between p-3 border-b border-black mb-3">
+        <h1 class="text-lg mb-0">New Adventures</h1>
+        <nav>
+          
+          <ul class="md:flex mb-0">
+              <li class="list-none">
+                <a
+                class="p-3"
+                href="/"
+              >Home</a>
+              </li>
+              <li class="list-none">
+                <a
+                class="p-3"
+                href="https://callmepartario.github.io/og-csrd/"
+              >Cypher System</a>
+              </li>
+              <li class="list-none">
+                <a
+                class="p-3"
+                href="/characters/"
+              >Characters</a>
+              </li>
+              <li class="list-none">
+                <a
+                class="p-3"
+                href="/wiki/"
+              >Wiki</a>
+              </li>
+              <li class="list-none">
+                <a
+                class="p-3"
+                href="/mechanics/"
+              >Mechanics</a>
+              </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="p-3">
+        <h1>Calendar</h1>
+<p>There are 12 synodic months in a year (12 cycles of lunar phases) 360 days in a year (a close approximation of earth, but not exactly for sake of easy to calculate and no leap days months etc)</p>
+<p>There are 4 seasons with 3 months each.  Spring, Summer, Fall, Winter</p>
+<p>The first of the month starts the day after the new moon.</p>
+<h2>Months</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Number</th>
+<th>Month</th>
+<th>Season</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td>Elderbloom</td>
+<td>Spring</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td>Verdantwisp</td>
+<td>Spring</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td>Blossomshroud</td>
+<td>Spring</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td>Sunfire</td>
+<td>Summer</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td>Hearthglow</td>
+<td>Summer</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td>Goldenveil</td>
+<td>Summer</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td>Emberfall</td>
+<td>Fall</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td>Harvestmoon</td>
+<td>Fall</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td>Mistralshade</td>
+<td>Fall</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td>Frostfall</td>
+<td>Winter</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td>Snowcloak</td>
+<td>Winter</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td>Everfrost</td>
+<td>Winter</td>
+</tr>
+</tbody>
+</table>
+<h2>Moon Phases</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Day</th>
+<th style="text-align:left">Phase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0/30</td>
+<td style="text-align:left">New Moon</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:left">Waxing Cresent</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:left">First Quarter</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:left">Waxing Gibbous</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:left">Full Moon</td>
+</tr>
+<tr>
+<td style="text-align:center">18</td>
+<td style="text-align:left">Waning Gibbous</td>
+</tr>
+<tr>
+<td style="text-align:center">22</td>
+<td style="text-align:left">Third Quarter</td>
+</tr>
+<tr>
+<td style="text-align:center">26</td>
+<td style="text-align:left">Waning Cresent</td>
+</tr>
+<tr>
+<td style="text-align:center">30/0</td>
+<td style="text-align:left">New Moon</td>
+</tr>
+</tbody>
+</table>
+<h2>Days</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Week</th>
+<th style="text-align:center">Solenday</th>
+<th style="text-align:center">Gloriday</th>
+<th style="text-align:center">Fierday</th>
+<th style="text-align:center">Auraday</th>
+<th style="text-align:center">Lunaday</th>
+<th style="text-align:center">Serenday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">4 - WxC</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">8 - 1Q</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">12 - WxG</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">15 - FM</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">18 - WnG</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">22 - 3Q</td>
+<td style="text-align:center">23</td>
+<td style="text-align:center">24</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">26 - WnC</td>
+<td style="text-align:center">27</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">29</td>
+<td style="text-align:center">30</td>
+</tr>
+</tbody>
+</table>
+<h2>Holidays</h2>
+<ul>
+<li>Bloomstide: 1.15</li>
+<li>Sunfire Revelry: 4.15</li>
+<li>King's day: 5.18</li>
+<li>Harvest Bounty Celebration: 7.15</li>
+<li>Harvest Festival: 8.15</li>
+<li>The Day of the Dead: 9.30</li>
+<li>Frostfall Gala: 10.15</li>
+<li>Remembrance Day: 12.30</li>
+</ul>
+<h2>Eras</h2>
+<p>Each era is established by the naming of a new Ruler of <a href="./xayd">xayd</a> on King's Day.  The year the new Ruler is named is the last year of the prior era and the new Ruler begins his official reign in a newly named era of their choosing until the next Ruler is appointed either upon their death, or other reasons for which the rules has been usurped or replaced.</p>
+<p>There have been 13 eras to date in the Royal Records covering 1556 years (and counting)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Number</th>
+<th>Ruler's Name</th>
+<th>Era Name</th>
+<th style="text-align:center">Era Abbr.</th>
+<th>Years in Era</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td></td>
+<td>Era of Radiant Glory</td>
+<td style="text-align:center">ERG</td>
+<td>75</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td></td>
+<td>Gold Age Era</td>
+<td style="text-align:center">GAE</td>
+<td>200</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td></td>
+<td>Crimson Dominion Era</td>
+<td style="text-align:center">CDE</td>
+<td>100</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td></td>
+<td>Eternal Prosperity Era</td>
+<td style="text-align:center">EPE</td>
+<td>150</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td></td>
+<td>Celestial Ascendancy Era</td>
+<td style="text-align:center">CAE</td>
+<td>300</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td></td>
+<td>Enigma Veil Era</td>
+<td style="text-align:center">EVE</td>
+<td>60</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td></td>
+<td>Shadowbane Era</td>
+<td style="text-align:center">SBE</td>
+<td>80</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td></td>
+<td>Harmonic Unity Era</td>
+<td style="text-align:center">HUE</td>
+<td>90</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td></td>
+<td>Luminous Sovereignty Era</td>
+<td style="text-align:center">LSE</td>
+<td>110</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td></td>
+<td>Verdant Blossom Era</td>
+<td style="text-align:center">VBE</td>
+<td>40</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td></td>
+<td>Ethereal Dominion Era</td>
+<td style="text-align:center">EDE</td>
+<td>250</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td></td>
+<td>Ironclad Dominion Era</td>
+<td style="text-align:center">IDE</td>
+<td>130</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td><a href="./Tomah_Hyrcanus">Tomah Hyrcanus</a></td>
+<td>Arcane Enlightenment Era</td>
+<td style="text-align:center">AEE</td>
+<td>70+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Current Year</strong> 70 AEE</p>
+<h2>Individual Important Days</h2>
+<p>Most people with in the realm have 2 important days sometimes there is three.  The individual's <strong>birthday</strong> is important and usually coincides with their <strong>naming day</strong>, however that is not always the case.</p>
+<p>But the day in which a person becomes an adult is their most important and the most celebrated day in their lives.  It is called their <strong>Luminara</strong>.</p>
+<p>On their Luminara an individual is free to choose their own name.</p>
+<h2>Planes and their Phases</h2>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Lunar Phase</th>
+<th>Fire</th>
+<th>Wyld</th>
+<th>Umbra</th>
+<th>Divine</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0/30</td>
+<td>New Moon</td>
+<td>Third Quarter</td>
+<td>Full Moon</td>
+<td>First Quarter</td>
+<td>New Moon</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Waxing Cresent</td>
+<td>Waning Cresent</td>
+<td>Waning Gibbous</td>
+<td>Waxing Gibbous</td>
+<td>1st Quarter</td>
+</tr>
+<tr>
+<td>8</td>
+<td>First Quarter</td>
+<td>New Moon</td>
+<td>Third Quarter</td>
+<td>Full Moon</td>
+<td>Full Moon</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Waxing Gibbous</td>
+<td>Waxing Cresent</td>
+<td>Waning Cresent</td>
+<td>Waning Gibbous</td>
+<td>3rd Quarter</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Full Moon</td>
+<td>First Quarter</td>
+<td>New Moon</td>
+<td>Third Quarter</td>
+<td>New Moon</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Waning Gibbous</td>
+<td>Waxing Gibbous</td>
+<td>Waxing Cresent</td>
+<td>Waning Cresent</td>
+<td>1st Quarter</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Third Quarter</td>
+<td>Full Moon</td>
+<td>First Quarter</td>
+<td>New Moon</td>
+<td>Full Moon</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Waning Cresent</td>
+<td>Waning Gibbous</td>
+<td>Waxing Gibbous</td>
+<td>Waxing Cresent</td>
+<td>3rd Quarter</td>
+</tr>
+<tr>
+<td>30/0</td>
+<td>New Moon</td>
+<td>Third Quarter</td>
+<td>Full Moon</td>
+<td>First Quarter</td>
+<td>New Moon</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Season</th>
+<th>Month</th>
+<th>Lunar</th>
+<th>Solar</th>
+<th>Fire</th>
+<th>Wyld</th>
+<th>Umbra</th>
+<th>Divine</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>C</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Spring</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>C</td>
+</tr>
+<tr>
+<td>Spring</td>
+<td>3</td>
+<td>F</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Summer</td>
+<td>4</td>
+<td></td>
+<td>C</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Summer</td>
+<td>5</td>
+<td></td>
+<td></td>
+<td>C</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Summer</td>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>F</td>
+<td></td>
+</tr>
+<tr>
+<td>Fall</td>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td>F</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Fall</td>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>F</td>
+</tr>
+<tr>
+<td>Fall</td>
+<td>9</td>
+<td>C</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Winter</td>
+<td>10</td>
+<td></td>
+<td>F</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Winter</td>
+<td>11</td>
+<td></td>
+<td></td>
+<td>F</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Winter</td>
+<td>12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>C</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Important Planar Dates</h3>
+<ul>
+<li>30th of the 1st month (wyld closest)</li>
+<li>8th of the 2nd month (divine closest)</li>
+<li>22nd of the 2nd month (divine closest)</li>
+<li>15th of the 3rd month (lunar closest)</li>
+<li>1st of the 4th month (solstice)</li>
+<li>22nd of the 5th month (Phoenix Day) (fire closest)</li>
+<li>8th of the 6th month (umbra furthest)</li>
+<li>15th of the 7th month (wyld furthest)</li>
+<li>15th of the 8th month (divine furthest)</li>
+<li>30th of the 8th month (divine furthest)</li>
+<li>30th of the 9th month (lunar furthest)</li>
+<li>1st of the 10th month (solstice)</li>
+<li>8th day of the 11th Month (fire furthest)</li>
+<li>22nd of the 12th month (umbra closest)</li>
+</ul>
+<p>The Church of the Phoenix celebrates the Phoenix on the 22nd day of the 5th month.</p>
+
+      </main>
+      <footer class="text-xs text-center p-3 border-t border-black mt-5 text-gray-400">
+        <p>Numenera, the Cypher System, No Thank You, Evil!, Invisible Sun, and their respective logos are trademarks of Monte Cook Games, LLC in the U.S.A. and other countries. All Monte Cook Games characters and character names, and the distinctive likenesses thereof, are trademarks of Monte Cook Games, LLC. Content derived from Monte Cook Games publications is &copy; 2013-2023 Monte Cook Games, LLC. -- <a href="/disclaimers">See full Disclaimer and Open Gaming License</a>
+        </p>
+        <p>&copy; AJ Hunter 2013-2023</p>
+      </footer>
+    </div>
+  </body>
+</html>

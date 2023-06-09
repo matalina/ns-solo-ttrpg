@@ -1,0 +1,13 @@
+---
+layout: base.njk
+eleventyNavigation:
+  key: wiki
+  title: Wiki
+  order: 3
+---
+
+<ul>
+{%- for wiki in collections.wiki -%}
+  <li><a href="{{ wiki.url }}">{{wiki.data.title}}</a></li>
+{%- endfor -%}
+</ul>

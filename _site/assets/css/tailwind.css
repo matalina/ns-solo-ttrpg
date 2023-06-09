@@ -737,6 +737,14 @@ em, i {
   list-style-type: none;
 }
 
+.place-items-center {
+  place-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .border {
   border-width: 1px;
 }
@@ -871,6 +879,10 @@ em, i {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -893,6 +905,10 @@ em, i {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:pr-5 {
+    padding-right: 1.25rem;
   }
 }
 

@@ -63,7 +63,7 @@
                 href="/mechanics/"
               >Mechanics</a>
               </li>
-              <li class="list-none">
+              <li class="list-none my-active-class">
                 <a
                 class="p-3"
                 href="/maps/"
@@ -79,11 +79,43 @@
         </nav>
       </header>
       <main class="p-3 pt-16">
-        <h1>Towns</h1>
-<h2>D</h2>
-<h3>Darkwell</h3>
-<p>A small village east of Oceana between <a href="./regions#The_Glowing Forest">The Glowing Forest</a> and [the swamp].  Darkwell is a front for a slaver ring.</p>
+        
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
 
+
+<h1>Maps</h1>
+<h2>Detailed Map</h2>
+<div id="detailed-map" class="h-[500px] w-full md:w-[750px] mx-auto my-5"></div>
+
+<h2>Travel Map</h2>
+<div id="travel-map" class="h-[500px] w-full md:w-[750px] mx-auto"></div>
+
+<script>
+const detailedMap = L.map('detailed-map', {
+    crs: L.CRS.Simple,
+    minZoom: -5,
+});
+const travelMap = L.map('travel-map', {
+    crs: L.CRS.Simple,
+    minZoom: -5,
+});
+const bounds = [[0,0], [1536,2048]];
+
+L.imageOverlay('/game/images/Base Map No Grid.jpg', bounds)
+  .addTo(detailedMap);
+detailedMap.fitBounds(bounds)
+  .setView([1286,400],0);
+
+L.imageOverlay('/game/images/Over Land Map.jpg', bounds)
+  .addTo(travelMap);
+travelMap.fitBounds(bounds)
+  .setView([1286,300],1);
+</script>
       </main>
       <footer class="text-xs text-center p-3 border-t border-black mt-5 text-gray-400">
         <p>Numenera, the Cypher System, No Thank You, Evil!, Invisible Sun, and their respective logos are trademarks of Monte Cook Games, LLC in the U.S.A. and other countries. All Monte Cook Games characters and character names, and the distinctive likenesses thereof, are trademarks of Monte Cook Games, LLC. Content derived from Monte Cook Games publications is &copy; 2013-2023 Monte Cook Games, LLC. -- <a href="/disclaimers">See full Disclaimer and Open Gaming License</a>

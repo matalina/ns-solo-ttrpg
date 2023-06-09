@@ -663,9 +663,18 @@ em, i {
   top: -3rem;
 }
 
+.z-\[9999\] {
+  z-index: 9999;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .mb-0 {
@@ -702,6 +711,10 @@ em, i {
 
 .hidden {
   display: none;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .w-32 {
@@ -872,6 +885,10 @@ em, i {
 
   .md\:w-1\/4 {
     width: 25%;
+  }
+
+  .md\:w-\[750px\] {
+    width: 750px;
   }
 
   .md\:justify-between {

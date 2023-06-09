@@ -5,7 +5,7 @@
 
 @layer components {
   a {
-    @apply text-teal-800 hover:text-teal-500 focus:text-teal-500 underline;
+    @apply underline text-orange-600 hover:text-orange-700 focus:text-orange-700;
   }
   li {
     @apply pl-6 list-disc list-inside;
@@ -13,15 +13,19 @@
 
   h1 {
     @apply text-7xl font-bold;
+    @apply text-red-700;
   }
   h2 {
     @apply text-5xl font-bold;
+    @apply text-orange-600
   }
   h3 {
     @apply text-3xl font-bold;
+    @apply text-green-600;
   }
   h4 {
     @apply text-2xl font-bold;
+    @apply text-blue-600;
   }
   h5 {
     @apply text-xl font-bold;
@@ -43,7 +47,13 @@
   td, th {
     @apply p-2;
   }
-  h3 strong {
-    @apply text-teal-700;
+
+  strong, b {
+    @apply text-amber-500;
   }
+
+  em, i {
+    @apply text-blue-600;
+  }
+
 }

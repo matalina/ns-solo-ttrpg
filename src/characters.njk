@@ -6,6 +6,8 @@ eleventyNavigation:
   order: 2
 ---
 
+<h1>Characters</h1>
+
 <ul>
 {%- for char in collections.characters -%}
   <li><a href="{{ char.url }}">{{char.data.title}}</a></li>

@@ -3,11 +3,12 @@ layout: base.njk
 eleventyNavigation:
   key: mechanics
   title: Mechanics
-  order: 3
+  order: 4
 ---
 
 <h1>Mechanics</h1>
 <ul>
+  <li><a href="https://callmepartario.github.io/og-csrd/">OG CSRD</a></li>
 {%- for mechanic in collections.mechanics -%}
   <li><a href="{{ mechanic.url }}">{{mechanic.data.title}}</a></li>
 {%- endfor -%}

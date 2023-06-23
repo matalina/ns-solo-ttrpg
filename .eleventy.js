@@ -43,6 +43,17 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("adventures", (collection) => {
+    const allItems = collection.getAll();
+    return allItems.filter((item) => {
+      return (item.page.url.toString().startsWith('/game/adventures') && item.page.fileSlug !== '000-setup');
+    }).sort((a,b) => {
+      if (a.fileSlug > b.fileSlug) return 1;
+      if (a.fileSlug < b.fileSlug) return -1;
+      return 0;
+    });
+  });
+
   return {
     dir: {
       input: "src",
